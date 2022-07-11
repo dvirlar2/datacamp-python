@@ -7,6 +7,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 <meta name="author" content="Daphne Virlar-Knight">
+<meta name="dcterms.date" content="2022-07-10">
 
 <title>Introduction to Data Science in Python</title>
 <style>
@@ -122,6 +123,12 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
           </div>
   </div>
     
+    <div>
+    <div class="quarto-title-meta-heading">Published</div>
+    <div class="quarto-title-meta-contents">
+      <p class="date">July 10, 2022</p>
+    </div>
+  </div>
     
   </div>
   
@@ -157,11 +164,13 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 <h2 class="anchored" data-anchor-id="notes-on-plotting">Notes on Plotting</h2>
 <p>When plotting a single graph, it’s not necessary to assign that graph to an object name before specifically visualizing it. In R, you can just create a graph without assigning it to an object name, and it pops up automatically. The equivalent of that in python would be to first create a graph (don’t need to assign it to an object) using the <code>plt.plot()</code> function, and then you can call it immediately afterwards using <code>plt.show()</code>. It would look like this:</p>
 <div class="cell">
-<div class="sourceCode cell-code" id="cb1"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="op">%%</span>script false <span class="op">--</span>no<span class="op">-</span><span class="cf">raise</span><span class="op">-</span>error</span>
-<span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-3"><a href="#cb1-3" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> matplotlib.pyplot <span class="im">as</span> plt</span>
-<span id="cb1-4"><a href="#cb1-4" aria-hidden="true" tabindex="-1"></a>plt.plot(some_x_values, some_y_values)</span>
-<span id="cb1-5"><a href="#cb1-5" aria-hidden="true" tabindex="-1"></a>plt.show()</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode cell-code" id="cb1"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="im">from</span> matplotlib <span class="im">import</span> pyplot <span class="im">as</span> plt</span>
+<span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a>plt.plot(<span class="st">"some_x_values"</span>, <span class="st">"some_y_values"</span>)</span>
+<span id="cb1-3"><a href="#cb1-3" aria-hidden="true" tabindex="-1"></a>plt.show()</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div>
+<p>Alternatively, the <code>matplotlib.pyplot</code> function could have been loaded in a more streamlined fashion like this:</p>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb2"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb2-1"><a href="#cb2-1" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> matplotlib.pyplot <span class="im">as</span> plt</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div>
 </section>
 </section>

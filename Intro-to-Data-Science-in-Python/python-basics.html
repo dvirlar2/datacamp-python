@@ -135,33 +135,26 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 
 </header>
 
-<section id="module-notes" class="level1">
-<h1>Module Notes:</h1>
+<p><br> <br></p>
+<section id="getting-started-in-python" class="level1">
+<h1>1. Getting Started in Python</h1>
+<section id="module-notes" class="level2">
+<h2 class="anchored" data-anchor-id="module-notes">Module Notes:</h2>
 <ul>
 <li><code>numpy</code>: aliased as <code>np</code>, and is used for performing mathematical operations on lists of data.</li>
 <li><code>statsmodels</code>: aliased as <code>sm</code>, and is used in ML.</li>
 <li><code>seaborn</code>: aliased as <code>sns</code>, and is a visualization library.</li>
 </ul>
 </section>
-<section id="variables" class="level1">
-<h1>Variables:</h1>
-<ul>
-<li>Unlike the “&lt;-” operator in R, python uses an equal sign to assign variables to objects.</li>
-</ul>
-<section id="types-of-variables" class="level2">
-<h2 class="anchored" data-anchor-id="types-of-variables">Types of Variables:</h2>
-<p><em>Float:</em> Represents an integer or decimal number <em>String”</em> Represent text. Can use single or double quotes when using quotes, but don’t mix.</p>
-</section>
-</section>
-<section id="useful-functions" class="level1">
-<h1>Useful Functions</h1>
+<section id="useful-functions" class="level2">
+<h2 class="anchored" data-anchor-id="useful-functions">Useful Functions</h2>
 <ul>
 <li><code>pd.read_csv()</code> reads in a csv file (from pandas library/module).</li>
 <li><code>plt.plot()</code> turns data into a line plot. The <code>plt</code> portion of that code is calling the <code>pyplot</code> function from the <code>matplotlib</code> module.</li>
 <li><code>plt.show()</code> displays plot in a new window.</li>
 </ul>
-<section id="notes-on-plotting" class="level2">
-<h2 class="anchored" data-anchor-id="notes-on-plotting">Notes on Plotting</h2>
+<section id="notes-on-plotting" class="level3">
+<h3 class="anchored" data-anchor-id="notes-on-plotting">Notes on Plotting</h3>
 <p>When plotting a single graph, it’s not necessary to assign that graph to an object name before specifically visualizing it. In R, you can just create a graph without assigning it to an object name, and it pops up automatically. The equivalent of that in python would be to first create a graph (don’t need to assign it to an object) using the <code>plt.plot()</code> function, and then you can call it immediately afterwards using <code>plt.show()</code>. It would look like this:</p>
 <div class="cell">
 <div class="sourceCode cell-code" id="cb1"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="im">from</span> matplotlib <span class="im">import</span> pyplot <span class="im">as</span> plt</span>
@@ -172,6 +165,11 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 <div class="cell">
 <div class="sourceCode cell-code" id="cb2"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb2-1"><a href="#cb2-1" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> matplotlib.pyplot <span class="im">as</span> plt</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div>
+</section>
+<section id="variables" class="level3">
+<h3 class="anchored" data-anchor-id="variables">Variables:</h3>
+<p>Unlike the “&lt;-” operator in R, python uses an equal sign to assign variables to objects.</p>
+</section>
 </section>
 </section>
 
